@@ -5,9 +5,9 @@ public class BubbleSort {
     {
         while (checkList(Arr))
         {
-            for (int i = 0; i < Arr.length; i++)
+            for (int i = 0; i < Arr.length -1 ; i++)
             {
-                if (Arr[i] > Arr[i + 1])
+                if (Arr[i] > Arr[i+ 1])
                 {
                     swap(Arr, i+0,i + 1);
                 }
@@ -24,7 +24,7 @@ public class BubbleSort {
 
     public static boolean checkList(int[] Arr)
     {
-        for (int x=0; x <Arr.length; x++)
+        for (int x=0; x <Arr.length -1 ; x++)
         {
             if (Arr[x] > Arr[x+1])
             {
