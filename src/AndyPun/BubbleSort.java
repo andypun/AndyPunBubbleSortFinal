@@ -1,9 +1,12 @@
 package AndyPun;
 
+import static AndyPun.SortUtils.isSorted;
+import static AndyPun.SortUtils.swap;
+
 public class BubbleSort {
     public static void bubbleSort(int[] Arr)
     {
-        while (checkList(Arr))
+        while (isSorted(Arr))
         {
             for (int i = 0; i < Arr.length -1 ; i++)
             {
@@ -15,22 +18,5 @@ public class BubbleSort {
         }
     }
 
-    public static void swap(int[]Arr, int i, int j)
-    {
-        int temp = Arr[i];
-        Arr[i] = Arr[j];
-        Arr[j] = temp;
-    }
 
-    public static boolean checkList(int[] Arr)
-    {
-        for (int x=0; x <Arr.length -1 ; x++)
-        {
-            if (Arr[x] > Arr[x+1])
-            {
-                return true;
-            }
-        }
-        return false;
-    }
 }
