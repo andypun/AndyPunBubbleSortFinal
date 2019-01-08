@@ -19,4 +19,12 @@ public class SortUtils {
         }
         return false;
     }
+
+    public static int checkSum(int[] before, int[] after)
+    {
+        for(int i=0;i<before.length;i++)
+        {
+
+        }
+    }
 }
